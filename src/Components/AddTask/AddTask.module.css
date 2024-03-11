@@ -1,0 +1,13 @@
+.addTaskContainer {
+    width: 88%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.taskInput {
+    border: 1px solid #ebebeb;
+    height: 2.6rem;
+    width: 100%;
+    padding: 5px 10px;
+    box-shadow:inset 0 0 20px #c1c1c1;
+}
