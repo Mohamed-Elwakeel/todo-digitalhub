@@ -19,9 +19,9 @@ body {
   align-items: center;
 }
 
-.App-header header {
+.App-header>h2 {
   color: #555;
-  font-size: clamp(2.5rem, 11vw, 4rem);
+  font-size: clamp(1.25rem, 5vw, 2.5em);
   font-family: 'Cabin', 'sans-serif';
   font-weight: 700;
   margin-block: 1.5rem;
