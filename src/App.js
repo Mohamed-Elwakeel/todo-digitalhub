@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { AddTask } from "./Components/AddTask/AddTask";
 import TaskList from "./Components/TaskList/TaskList";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const values = localStorage.getItem("TASKS")
+    if (values === null) {
+      return []
+    } else {
+      return JSON.parse(values)
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("TASKS", JSON.stringify(todos))
+  }, [todos])
 
   // Add todo input function 
   function addTodo(title, description) {
