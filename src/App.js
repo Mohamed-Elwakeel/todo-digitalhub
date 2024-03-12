@@ -11,7 +11,7 @@ function App() {
     setTodos(currentTodos => {
       return [
         ...currentTodos,
-        { id: crypto.randomUUID(), title, completed: false },
+        { id: crypto.randomUUID(), title, status: "Not Started" },
       ]
     })
   }
@@ -24,15 +24,16 @@ function App() {
   }
 
   // Toggle between the status of todo
-  function toggleTodo(id, completed) {
+  function toggleTodo(id, newStatus) {
     setTodos(currentTodos => {
       return currentTodos.map(todo => {
         if (todo.id === id) {
-          return { ...todo, completed }
+          // console.log(todo.status)
+          return { ...todo, status: newStatus };
         }
-        return todo
-      })
-    })
+        return todo;
+      });
+    });
   }
 
   // Edit the todo text and description
