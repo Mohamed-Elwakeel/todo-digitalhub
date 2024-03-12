@@ -51,15 +51,26 @@ export default function Task({ todo, deleteTodo, toggleTodo, editTodo }) {
                             autoFocus
                         />
                     ) : (
-                        <p
-                            className={`${styles.taskText} ${todo.status === "Finished" ? styles.checked : ""
-                                }`}
-                            onDoubleClick={() => {
-                                setEditingTodo(true);
-                            }}
-                        >
-                            {todo.title}
-                        </p>
+                        <div className="d-flex flex-column">
+                            <h3
+                                className={`${styles.taskText} ${todo.status === "Finished" ? styles.checked : ""
+                                    }`}
+                                onDoubleClick={() => {
+                                    setEditingTodo(true);
+                                }}
+                            >
+                                {todo.title}
+                            </h3>
+                            <p
+                                className={`${styles.taskDescription} ${todo.status === "Finished" ? styles.checked : ""
+                                    }`}
+                                onDoubleClick={() => {
+                                    setEditingTodo(true);
+                                }}
+                            >
+                                {todo.description}
+                            </p>
+                        </div>
                     )}
                 </li>
             </div>

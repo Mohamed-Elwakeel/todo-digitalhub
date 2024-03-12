@@ -7,11 +7,11 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   // Add todo input function 
-  function addTodo(title) {
+  function addTodo(title, description) {
     setTodos(currentTodos => {
       return [
         ...currentTodos,
-        { id: crypto.randomUUID(), title, status: "Not Started" },
+        { id: crypto.randomUUID(), title, description, status: "Not Started" },
       ]
     })
   }
