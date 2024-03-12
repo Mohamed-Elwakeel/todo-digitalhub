@@ -1,43 +1,10 @@
-.taskContainer {
+.listContainer {
+    max-width: 100%;
+    border: 0;
+    margin-inline: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 1rem;
-}
-.taskItem {
-    display: flex;
-    flex-direction: row;
-    gap: .6rem;
-    margin-inline: 3rem;
-    text-decoration: none;
-    width: 100%;
-    /* justify-content: space-between; */
-}
-
-.checked {
-    text-decoration: line-through !important;
-}
-
-.taskCheck {
-    width: 1rem;
-}
-
-.taskText{
-    font-size: 1.4rem;
-    color: #747274;
-    font-weight: 600;
-}
-
-.deleteBtnTask {
-    color: rgb(206, 58, 58);
-    cursor: pointer;
-    margin-right: 5rem;
-}
-
-.editBtn {
-    /* border: 1px solid #555; */
-    margin-inline: 1rem;
-    padding: 2px;
-    cursor: pointer;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
 }
