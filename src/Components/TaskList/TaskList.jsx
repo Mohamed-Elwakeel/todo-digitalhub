@@ -2,7 +2,7 @@ import React from "react";
 import Task from "../Task/Task";
 import styles from "./TaskList.module.css";
 
-export default function TaskList({ todos, deleteTodo, toggleTodo, editTodo }) {
+export default function TaskList({ todos, deleteTodo, toggleTodo, editTodo, editDescription }) {
 
     return (
         <ul className={styles.listContainer}>
@@ -14,6 +14,7 @@ export default function TaskList({ todos, deleteTodo, toggleTodo, editTodo }) {
                     deleteTodo={deleteTodo}
                     toggleTodo={toggleTodo}
                     editTodo={editTodo}
+                    editDescription={editDescription}
                 />
             ))}
         </ul>
