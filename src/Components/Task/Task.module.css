@@ -1,12 +1,13 @@
 .taskContainer {
     display: flex;
     border: 2px solid transparent;
-    width: fit-content !important;
+    /* width: fit-content !important; */
     background: linear-gradient(71deg, #d3d3d3, #e0e0e0, #d3d3d3);
     background-clip: padding-box;
     border-radius: .5rem;
     flex-direction: column;
     gap: 1rem;
+    width: 45%;
 }
 
 .taskItem {
@@ -60,7 +61,9 @@
 .btnSection {
     display: flex;
     padding: 1rem;
+    padding-bottom: .5rem;
     gap: 1rem;
+    justify-content: center;
 }
 
 .statusSelect {
@@ -81,4 +84,23 @@
     margin-inline: 1rem;
     padding: 2px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 60em) {
+    .taskContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .taskContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 27em) {
+    .btnSection {
+        align-items: center;
+        flex-direction: column;
+    }
 }

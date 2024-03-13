@@ -1,0 +1,49 @@
+.loginContainer {
+    background: url(../../assets//debut_light.png);
+    width: 50%;
+    padding: 1.618em;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 5px 15px #444, inset 0 -5px 35px #999;
+}
+
+.loginContainer header {
+    color: #555;
+    font-size: clamp(2.5rem, 10vw, 4.5rem);
+    font-family: 'cabin', 'sans-serif';
+    font-weight: 700;
+    margin-block: 1.2rem;
+    text-align: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-inline: 2rem;
+}
+
+.loginForm input {
+    padding: 0.7rem 1.15rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loginForm button {
+    width: 75%;
+    background-color: #555;
+    color: white;
+    padding: 0.8rem 1.25rem;
+    margin: auto;
+    margin-bottom: 1.4rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loginForm button:hover {
+    background-color: #333;
+}
